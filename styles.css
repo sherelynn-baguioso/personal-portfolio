@@ -154,3 +154,25 @@ footer {
   background: var(--color-gradient);
   color: var(--color-white);
 }
+
+@media only screen and (max-width: 61.25em) {
+  .project-tile {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .project {
+    grid-column: span 2;
+  }
+
+  .project:nth-last-child(1):nth-child(odd) {
+    grid-column: 2 / span 2;
+  }
+
+  .contacts {
+    margin-top: 5rem;
+  }
+
+  .contact-links {
+    margin: 2rem;
+  }
+}
