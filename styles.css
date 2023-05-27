@@ -176,3 +176,31 @@ footer {
     margin: 2rem;
   }
 }
+
+@media only screen and (max-width: 42.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  .project-tile {
+    grid-template-columns: 1fr;
+    padding: 1rem 5rem;
+  }
+
+  .project:nth-last-child(1):nth-child(odd) {
+    grid-column: 1 / span 3;
+  }
+
+  .project {
+    grid-column: span 3;
+  }
+
+  #project-header {
+    width: 80%;
+    text-align: center;
+  }
+
+  .contacts {
+    margin-top: 8rem;
+  }
+}
